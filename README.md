@@ -1,8 +1,11 @@
-# Examination 2 in 1DV022
+# Personal Web Desktop
 
 ## Installation
 `npm install`
 
 ## Start
 `npm start`
+
+## Includes 
+`Chat application - Memory Application - Todolist Application`
 
