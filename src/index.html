@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='icon' type='image/png' href='/favicon.ico' />
+    <title> Personal Web Desktop</title>
+</head>
+<body>
+    <div id="load_screen">
+        <div class="e" id="loading">
+            Loading Your <br> Personal Web Desktop...
+            <div id="wave">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="chat" id="chatContainer">
+        <template id="chatTemplate">
+            <div id="theContainer" class="theContainer" draggable="true">
+                <div id="chat-title">
+                    <figure id="avatar"></figure>
+                    <figure id="exitButton" class="exitButton"></figure>
+                </div>
+                <div id="textArea"></div>
+                <div id="messageArea">
+                    <input class="textInput" placeholder="write message . . .">
+                    <button id="sendButton">Send</button>
+                </div>
+            </div>
+        </template>
+    </div>
+
+    <div class="ToDoContainer">
+        <template id="todoTemplate">
+            <div id="toDoListContainer" class="theContainer" draggable="true">
+                <div id="todo-title">
+                    <figure id="avatartodo"></figure>
+                    <figure id="exitButton" class="exitButton"></figure>
+                </div>
+                <div class="deletedTasks">
+                    <p class="theText"> Deleted Todos </p>
+                    <div class="deletedPlaceholder"></div>
+                </div>
+                <div class="completedTasks">
+                    <p class="theTexts"> Completed Todos </p>
+                    <div class="completedPlaceholder"></div>
+                </div>
+                <div class="mainlistContainer">
+                    <p class="headerText"> To Do List</p>
+                    <input class="inputField">
+                    <button class="myBtn myBtn--border myBtn--primary myBtn--animated" id="submitButton">ADD TODO</button>
+                    <div class="list"></div>
+                </div>
+            </div>
+        </template>
+    </div>
+
+    <div id="memoryContainer">
+        <template id="titelTemplate">
+            <div id="TheMemoryContainer" class="theContainer">
+                <div id="memory-title">
+                    <figure id="exitButton" class="exitButton"></figure>
+                    <avatar id="avatarlogo" class="avatarlogo"></avatar>
+                    <div id="timer" class="timer"></div>
+                    <div id="results">Attempts : 0</div>
+                    <div id="pairs"></div>
+                </div>
+                <div id="gameBoard" class="gameBoard"></div>
+            </div>
+        </template>
+
+        <template id="playsOver">
+            <div class="endResult">
+                <p class="hej" id="endResultText"></p>
+                <button id="playAgainButton">Play Again</button>
+            </div>
+        </template>
+
+        <template>
+            <a href="#"> <img id="imgs" src="image/memorybricks/0.png" alt="A memorybrick" /> </a>
+        </template>
+    </div>
+
+    <div id="sidebar">
+        <ul id="sidebar_menu">
+            <div id="clock"></div>
+            <li>
+                <a id="chatButton" class="icon"></a>
+                <li><a id="todoButton" class="icon i-todolist"></a> </li>
+                <li><a id="memoryButton" class="icon i-memory"></a> </li>
+                <li><a>Credits</a>
+                    <ul class="dropup">
+                        <li><a>Icons made by Vectors Market fromflaticon.com is licensed by CC 3.0 BY</a> </li>
+                        <li><a>Images made by Moa Alfredsson Original assignment by Petter Miller 2002</a></li>
+                    </ul>
+                </li>
+        </ul>
+    </div>
+</body>
+
+<script src="build.js"></script>
+
+</html>
